@@ -1,4 +1,5 @@
-FROM richarvey/nginx-php-fpm:1.7.2
+# https://github.com/debjit/render-laravel-docker
+FROM richarvey/nginx-php-fpm:latest
 
 COPY . .
 
