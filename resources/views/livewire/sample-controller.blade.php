@@ -1,8 +1,8 @@
 <div class="space-y-4">
     <nav class="container mx-auto px-4 py-6">
         <ul class="flex space-x-2">
-            <li><a href="/" data-turbolinks-action="replace">Home</a></li>
-            <li><a href="/edit" data-turbolinks-action="replace">Edit</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/edit">Edit</a></li>
         </ul>
     </nav>
 
@@ -11,7 +11,7 @@
         <p>Route: `/`</p>
     </div>
 
-    <div class="container mx-auto" >
+    <div class="container mx-auto">
         <x-milkdown />
     </div>
 
