@@ -24,6 +24,19 @@
             <script data-turbolinks-eval="false">
                 document.addEventListener('turbolinks:load', function() {
                     document.querySelectorAll('.milkdown-container').forEach(async (element) => {
+
+                        // Turbolinks caches the html so we need to check and remove previous
+                        // editor when using back and forward browser navigation buttons.
+                        //
+                        // Additionally turbolinks only caches html and not the javascript state
+                        // so preserving editor between navigation loses its context and functionality.
+                        //
+                        // The only thing we could do is tear the editor apart and build it again on each page visit.
+                        const milkdownWrapper = element.querySelector('.editor .milkdown-menu-wrapper')
+                        if (milkdownWrapper) {
+                            milkdownWrapper.parentNode.innerHTML = ''
+                        }
+
                         const editor = await milkdown.Editor
                             .make()
                             .config((ctx) => {
