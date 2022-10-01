@@ -14,4 +14,7 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ])
+    .postCss('resources/css/prism-shades-of-purple.css', 'public/css/prism-shades-of-purple.css')
+    // .browserSync('https://milkdown-test.test')
+    .version();

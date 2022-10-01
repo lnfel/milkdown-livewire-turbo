@@ -28,10 +28,12 @@
 
         <!--<script src="https://cdn.tailwindcss.com"></script>-->
 
-        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
+
+        <link rel="stylesheet" href="{{ mix('css/prism-shades-of-purple.css') }}" data-turbolinks-track="reload" />
         @livewireStyles
 
         <!--
