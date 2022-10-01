@@ -31,7 +31,8 @@
                             })
                             .use(theme.nord)
                             .use(preset.commonmark)
-                            .use(pluginMenu.menu)
+                            .use(milkdownPlugin.menu)
+                            .use(milkdownPlugin.prism)
                             .create()
 
                         // Sample action for each component

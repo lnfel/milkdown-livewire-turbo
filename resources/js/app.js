@@ -11,7 +11,18 @@ require('./bootstrap');
 window.milkdown = require('@milkdown/core')
 window.preset = require('@milkdown/preset-commonmark')
 window.theme = require('@milkdown/theme-nord')
-window.pluginMenu = require('@milkdown/plugin-menu')
+import * as pluginPrism from '@milkdown/plugin-prism'
+import * as pluginMenu from '@milkdown/plugin-menu'
+const plugins = [pluginMenu, pluginPrism]
+window.milkdownPlugin = {}
+
+plugins.forEach((plugin) => {
+    Object.entries(plugin).forEach(([name, exported]) => {
+        milkdownPlugin[name] = exported
+    })
+})
+
+console.log('milkdownPlugin: ', milkdownPlugin)
 window.milkdownUtils = require('@milkdown/utils')
 
 const turbolinks = require('turbolinks')
