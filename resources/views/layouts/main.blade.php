@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
 
         <link rel="stylesheet" href="{{ mix('css/prism-shades-of-purple.css') }}" data-turbolinks-track="reload" />
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}" data-turbolinks-track="reload" />
         @livewireStyles
 
         <!--
